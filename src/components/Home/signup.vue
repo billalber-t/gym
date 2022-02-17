@@ -28,7 +28,7 @@
       <v-row >
         <v-col >
           <v-text-field
-            v-model="first"
+           
             label="First Name"
             outlined
             shaped
@@ -36,7 +36,7 @@
        
          
           <v-text-field
-            v-model="last"
+      
             label="Last Name"
             outlined
             shaped

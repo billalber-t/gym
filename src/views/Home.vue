@@ -1,9 +1,6 @@
 <template>
-<v-app>
- 
-    <gheader />
-      
-    <v-main>
+<div>   
+   
       <v-container app>
         <v-row>
           <v-col md-12>
@@ -12,37 +9,30 @@
         </v-row>
         <v-row>
           <v-col md-12>
-            <Map />
+            <Mapped />
           </v-col> 
         </v-row>
-      </v-container>
-      
-      
+      </v-container>  
 
-    </v-main>
     
-
-    <gfooter /> 
-  
-
-  </v-app>
+</div>
   
 </template>
 
 <script>
 import showCase from "../components/Home/showCase.vue";
-import gheader from "../components/gheader.vue";
-import gfooter from "../components/gfooter.vue";
-import Map from "../components/Map.vue";
+// import gheader from "../components/gheader.vue";
+// import gfooter from "../components/gfooter.vue";
+import Mapped from "../components/Mapped.vue";
 
 export default {
   name: "Home",
 
   components: {
-         Map,
+         Mapped,
         showCase,
-        gheader,
-        gfooter
+        // gheader,
+        // gfooter
   },
 
   data () {

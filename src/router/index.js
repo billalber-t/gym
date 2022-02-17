@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+// import Home from "../views/Home.vue";
+// import FAQs from "../views/FAQs.vue";
+import layout from "../views/layout.vue"
 //import App from "../App.vue";
 
 Vue.use(VueRouter);
@@ -8,9 +10,34 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "layout",
+    component: layout,
+    children:[
+      {
+        path: "/",
+        name: "Home",
+        component: () => import("../views/Home.vue"),
+      },
+      {
+        path: "/faqs",
+        name: "FAQs",
+        component: () => import("../views/FAQs.vue"),
+      }
+      ,
+      {
+        path: "/join",
+        name: "Join",
+        component: () => import("../views/Join.vue"),
+      },
+
+      {
+        path: "/timetable",
+        name: "Timetable",
+        component: () => import("../views/Timetable.vue"),
+      }
+    ],
   },
+ 
   {
     path: "/about",
     name: "About",

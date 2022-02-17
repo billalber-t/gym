@@ -20,9 +20,10 @@
         class="ma-2"
         color="green"
         text-color="white"
-        v-for="(name) in names" :key="name"
+        v-for="(item) in items" :key="item.name"
+        :to="item.link"
         >
-           {{ name }} 
+           {{ item.name }} 
         </v-chip>
 
         <!-- <v-btn flat>
@@ -63,7 +64,13 @@
 export default {
     data(){
         return{
-            names:[ 'Home','Join', 'Timetable', 'FAQs']
+
+            items :[
+                {name:'Home', link:'/'},
+                {name:'Join', link:'/join'},
+                {name:'Timetable', link:'/timetable'},
+                {name:'FAQs', link:'/faqs'}
+            ]
         }
     }
 }
