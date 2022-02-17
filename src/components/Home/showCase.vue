@@ -2,7 +2,7 @@
 <div class="showcase" >
     <v-container class="contain"  >
         <v-row class="md-6 sm-12">
-            <v-col class="md-6 sm-12" align="center" justify="center" >
+            <v-col class="md-6 sm-12">
                 <h1><span style="text-decoration:underlined;">Hit </span> one of the greatest gyming facilieties south of Sahara </h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam 
@@ -45,14 +45,17 @@ export default {
     background-position-y: 0 !important;
     background-position-x: 0 !important;
     color: white !important;
-    
+
+    box-sizing: border-box !important;
+   
 }
 
 .contain{
-        position: absolute;
+        position: relative;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        
 }
 
 .contain h1{

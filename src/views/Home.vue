@@ -4,13 +4,27 @@
     <gheader />
       
     <v-main>
-      <showCase />
+      <v-container app>
+        <v-row>
+          <v-col md-12>
+          <showCase />
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col md-12>
+            <Map />
+          </v-col> 
+        </v-row>
+      </v-container>
+      
+      
+
     </v-main>
     
 
-    <gfooter />
+    <gfooter /> 
   
-    
+
   </v-app>
   
 </template>
@@ -19,38 +33,35 @@
 import showCase from "../components/Home/showCase.vue";
 import gheader from "../components/gheader.vue";
 import gfooter from "../components/gfooter.vue";
+import Map from "../components/Map.vue";
 
 export default {
   name: "Home",
 
   components: {
-    showCase,
-    gheader,
-    gfooter
+         Map,
+        showCase,
+        gheader,
+        gfooter
   },
 
   data () {
       return {
-        items: [
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
-          },
-        ],
+        // items: [
+        //   {
+        //     src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+        //   },
+        //   {
+        //     src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+        //   },
+        //   {
+        //     src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+        //   },
+        //   {
+        //     src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+        //   },
+        // ],
       }
   }
 };
 </script>
-<style scoped>
-.showcase{
-  background: url("/src/images/image1.jpg");
-}
-</style>
