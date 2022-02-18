@@ -3,7 +3,7 @@
     <v-container class="contain"  >
         <v-row class="md-6 sm-12">
             <v-col class="md-6 sm-12">
-                <h1><span style="text-decoration:underlined;">Hit </span> one of the greatest gyming facilieties south of Sahara </h1>
+                <h1> Beba chuma ! Unga leo  </h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, im

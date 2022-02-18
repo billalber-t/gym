@@ -3,7 +3,7 @@
     <v-app-bar
      
       absolute
-      color="white"
+      color="grey lighten-4"
       tile
       elevate-on-scroll
      

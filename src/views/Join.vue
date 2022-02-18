@@ -5,7 +5,7 @@
 <h1>Join page</h1>
   <v-row justify="center">
     <v-col class="md-6 lg-6 sm-12" cols="6" >
-         <v-card depressed elevation="0" outlined>
+         <v-card depressed elevation="0">
             <v-card-title>Welcome to the ultimate gYm experience.</v-card-title>
             <v-card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus cumque a
                     omnis quis ipsum inventore veritatis blanditiis, temporibus qui itaque
@@ -29,8 +29,9 @@
       md="6"
       lg="6"
     >
-      <v-card ref="form" elevation="0" outlined flat width="100%">
-        <v-card-text>
+    
+        <v-card ref="form" elevation="0"  flat  class="mx-auto" outlined>
+          <v-card-text>
           <v-text-field
             ref="name"
             v-model="name"
@@ -118,6 +119,9 @@
           </v-btn>
         </v-card-actions>
       </v-card>
+    
+    
+      
     </v-col>
   </v-row>
 </v-container>
