@@ -3,13 +3,13 @@
     <v-container class="contain"  >
         <v-row class="md-6 sm-12">
             <v-col class="md-6 sm-12">
-                <h1> Beba chuma ! Unga leo  </h1>
+                <h1>Hit to the beat! </h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam 
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, im
                     pedit nam debitis incidunt quae und
                 </p>
-                 <v-btn outlined  depressed class="red white--text pa-5 btn" width="50%"><h3>Join</h3></v-btn>
+                 <v-btn outlined  depressed class="success white--text pa-5 btn" width="50%" to="/join"><h3>Join</h3></v-btn>
             </v-col>
             <v-col class="md-6 sm-12" >
                 <v-row>

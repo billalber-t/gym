@@ -3,7 +3,7 @@
     <v-app-bar
      
       absolute
-      color="grey lighten-4"
+      color="white lighten-4"
       tile
       elevate-on-scroll
      
@@ -12,7 +12,10 @@
     >
      
 
-      <v-toolbar-title class="success--text pl-5" >gYm</v-toolbar-title>
+      <v-toolbar-title class="success--text ml-10" >
+        <v-img src="../images/gYm_logo.jpg" height="65" width="75">
+        </v-img> 
+        </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -41,11 +44,22 @@
             FAQs
         </v-btn>-->
         
-      <v-btn  dense rounded outlined class="success--text pl-15 py-0">
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn> 
+      <!-- <v-btn  dense rounded outlined class="success--text pl-15 py-0">
+        <v-icon></v-icon>
+      </v-btn>  -->
+      <div style="width:15%">
+      <v-text-field
+          
+            label="Search"
+            append-icon="mdi-magnify"
+            dense
+            height="100%"
+            class="pt-4 mt-3 ml-2 success--text "
+            outlined
+            
+          ></v-text-field>
 
-     
+     </div>
     </v-app-bar>
     <!-- <v-sheet
       id="scrolling-techniques-7"
