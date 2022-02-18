@@ -23,28 +23,54 @@
         </form>
   </v-container> -->
 
-  <v-form class="white" outlined elevelation="4" round >
+ 
     <v-container>
       <v-row >
         <v-col >
-          <v-text-field
-           
-            label="First Name"
-            outlined
-            shaped
-          ></v-text-field>
-       
+            <v-card elevation="3" class="pa-1" shaped>
+
+              <v-card-title>
+                Sign Up
+              </v-card-title>
+
+          <v-card-text> 
+            <v-form>
+            <v-text-field
+            
+              label="First Name"
+              outlined
+              rounded
+              class="px-2"
+            ></v-text-field>
+        
+          
+            <v-text-field
+              label="Last Name"
+              outlined
+              rounded
+              class="px-2"
+            ></v-text-field>
+
+            </v-form>
+          </v-card-text>
          
-          <v-text-field
-      
-            label="Last Name"
-            outlined
-            shaped
-          ></v-text-field>
+          <v-card-actions>
+            <v-btn 
+              flat
+              class="success white--text pa-4"
+              rounded
+              elevation="0"
+              depressed
+              align=""
+            >
+                Sign Up
+          </v-btn>
+          </v-card-actions>
+          
+            </v-card>
         </v-col>
       </v-row>
     </v-container>
-  </v-form>
 </template>
 <script>
 
