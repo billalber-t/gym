@@ -2,14 +2,22 @@
 <v-container>
     <v-row>
         <v-col cols="8">
-        <h1>Your Coordinates</h1>
-        <p>{{ myCoordinates.lat }} Latitude, {{ myCoordinates.lng }} Longitude</p>
+        <div>
+        <h3>Location</h3>
+        <!-- <p>{{ myCoordinates.lat }} Latitude, {{ myCoordinates.lng }} Longitude</p>
 
         <h1>Map Coordinates</h1>
-        <p>{{ mapCoordinates.lat }} Latitude , {{ mapCoordinates.lng }} Longitude</p>
+        <p>{{ mapCoordinates.lat }} Latitude , {{ mapCoordinates.lng }} Longitude</p> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellendus modi, 
+            est doloremque laboriosam repellat, atque voluptatum dolore perspiciatis ratione, 
+            accusantium eveniet quae sunt 
+            tenetur harum cumque sapiente consequatur inventore.
+        </p>
+
+        </div>
         <GmapMap
             :center="center"
-            :zoom="18"
+            :zoom="16"
             map-type-id="terrain"
             style="width: 640px; height: 360px; margin:32px auto;"
             ref="mapRef"
@@ -25,7 +33,16 @@
         </v-col>
         <v-col cols="4">
                 <div>
-                    <h3>Locations</h3>
+                    <h3>Services</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque.</p>
+                    <v-list>
+                        <v-list-item v-for="service in services" :key="service.name">
+                            <v-list-item-icon>
+                                <v-icon>{{ service.icon }}</v-icon>
+                            </v-list-item-icon>
+                           <v-list-item-content>{{ service.name }}</v-list-item-content> 
+                        </v-list-item>
+                    </v-list>
                 </div>
         </v-col>
 
@@ -60,7 +77,19 @@ export default {
             //     }
             // ],
 
-            center : home
+            center : home,
+
+            services:[
+                {icon : 'mdi-dumbbell', name: 'Gyming facilities'},
+                {icon : 'mdi-bottle-tonic-plus-outline', name: 'Psyiotheraphy'},
+                {icon : 'mdi-slide', name: 'Massage'},
+                {icon : 'mdi-shower-head', name: 'Hot shower'},
+                {icon : 'mdi-wifi', name: 'WiFi'}
+            ]
+                
+            
+
+
         }
     },
 
